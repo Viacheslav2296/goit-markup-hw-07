@@ -1,0 +1,55 @@
+/*Преимущества*/
+.featurs-box{
+    background-color: #F5F4FA;
+    height: 120px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.features{
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--color-h);
+}
+.features-paragraf{
+    line-height: 1.71;
+}
+.card-set {
+  display: flex;
+}
+
+.list-card{
+    flex-basis: calc((100% - 4 * 30px) / 4);
+}
+.card-set .list-card + .list-card {
+  margin-left: 30px;
+}
+.gallery-text-br{
+    position: relative;
+}
+.gallery-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 10px;
+
+    background: rgba(47, 48, 58, 0.8);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
