@@ -1,0 +1,38 @@
+
+/* Adress nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .site-nav-navigation + .site-nav-navigation {
+  margin-left: 50px;
+}
+
+.adress-company{
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+    text-decoration: none;
+    transition: colors 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+.adress-company:hover{
+    color: var(--icon-bg);
+}
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contacts-icon.mail {
+  width: 16px;
+  height: 11px;
+}
+.contacts-icon.phone {
+  width: 10px;
+  height: 15px;
+}
