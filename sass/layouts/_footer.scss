@@ -1,0 +1,112 @@
+/*footer*/
+.footer-bg{
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.adreess-company-footer{
+  
+    margin-top: 20px;
+    font-style: inherit;
+    
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: var(--main-bg-cl);
+    text-decoration: none;
+}
+.adreess-company-footer p{
+      padding-bottom: 9px;
+}
+.adreess-company-footer .adress-company{
+    padding-bottom: 9px;
+}
+
+.logo{
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.logo-footer{
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    color: var(--main-bg-cl);
+}
+.logo-web-blue{
+    color: var(--icon-bg);
+}
+.name-links{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--color-h);
+}
+.categories{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.03em;
+color: var(--color-title);
+}
+.line{
+    text-decoration: none;
+}
+.footer-social-div{
+    padding-left: 70px;
+}
+.footer-social-title{
+    margin-bottom: 20px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+.footer-social-list{
+    display: flex;
+}
+.footer-bg .container{
+    display: flex;
+    align-items: baseline;
+}
+.footer-social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer-social-link:hover,
+.footer-social-link:focus{
+    background-color: var(--icon-bg);
+   
+}
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon{
+    fill: currentColor;
+    color: #FFFFFF;
+}
+.footer-social-item:not(:last-child){
+    margin-right: 10px;
+}
+.footer-social-icon{
+    fill: var(--main-bg-cl);
+}
