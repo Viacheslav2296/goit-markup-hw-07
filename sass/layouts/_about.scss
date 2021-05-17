@@ -1,0 +1,9 @@
+/*Чем мы занимаемся */
+
+.list-card-imagis{
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    text-align: center;
+}
+.list-card-imagis .imagis-card + .imagis-card {
+  margin-left: 30px;
+}
