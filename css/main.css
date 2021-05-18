@@ -67,6 +67,7 @@ li {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -487,8 +488,6 @@ header {
 }
 
 .regular-customers-list__client-logo {
-  width: 106px;
-  height: 60px;
   fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;
@@ -808,33 +807,40 @@ footer {
 .checkbox-label {
   display: flex;
   align-items: center;
-  cursor: pointer;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  justify-content: center;
+  margin-bottom: 30px;
   font-size: 14px;
-  line-height: 1.78;
+  line-height: 24px;
   letter-spacing: 0.03em;
 }
 
-.checkbox-label__icon {
-  margin-right: 7px;
+.checkbox-label::before {
+  display: flex;
+  content: "";
   width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  transition-property: background-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  height: 16px;
+  border: 1px solid #2F303A;
+  border-radius: 3px;
+  margin-right: 8px;
 }
 
-.checkbox-label__input:checked + .checkbox-label__icon {
+.checkbox:checked + .checkbox-label::before {
+  background-image: url(../images/icons/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #2196F3;
+  border-color: #2F303A;
   border: none;
-  background-color: #2196f3;
 }
 
-.contract-link {
+.checkbox-link {
+  color: #2196F3;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-left: 4px;
   text-decoration: underline;
-  color: #2196f3;
 }
 
 .btn-submit {
@@ -883,7 +889,6 @@ footer {
 
 .btn-filters__btn {
   padding: 6px 22px;
-  min-width: 128px;
   min-width: 38px;
   border: 0px;
   border-radius: 4px;
