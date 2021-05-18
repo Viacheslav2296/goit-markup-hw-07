@@ -318,42 +318,42 @@
                 <ul class="regular-customers-list">
                     <li class="regular-customers-list__client">
                         <a class="regular-customers-list__link" href="#">
-                            <svg class="regular-customers-list__client-logo">
+                            <svg class="regular-customers-list__client-logo" width="41" height="47">
                                 <use href="./images/icons/icons.svg#icon-group"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="regular-customers-list__client">
                         <a class="regular-customers-list__link" href="#">
-                            <svg class="regular-customers-list__client-logo">
+                            <svg class="regular-customers-list__client-logo" width="41" height="52">
                                 <use href="./images/icons/icons.svg#icon-group-1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="regular-customers-list__client">
                         <a class="regular-customers-list__link" href="#">
-                            <svg class="regular-customers-list__client-logo">
+                            <svg class="regular-customers-list__client-logo" width="44" height="41">
                                 <use href="./images/icons/icons.svg#icon-group-2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="regular-customers-list__client">
                         <a class="regular-customers-list__link" href="#">
-                            <svg class="regular-customers-list__client-logo">
+                            <svg class="regular-customers-list__client-logo" width="85" height="41">
                                 <use href="./images/icons/icons.svg#icon-group-3"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="regular-customers-list__client">
                         <a class="regular-customers-list__link" href="#">
-                            <svg class="regular-customers-list__client-logo">
+                            <svg class="regular-customers-list__client-logo" width="63" height="45">
                                 <use href="./images/icons/icons.svg#icon-group-4"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="regular-customers-list__client">
                         <a class="regular-customers-list__link" href="#">
-                            <svg class="regular-customers-list__client-logo">
+                            <svg class="regular-customers-list__client-logo" width="94" height="44">
                                 <use href="./images/icons/icons.svg#icon-group-5"></use>
                             </svg>
                         </a>
@@ -433,11 +433,11 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <btn class="modal__btn-close is-hidden" data-modal-close>
+            <button class="modal__btn-close is-hidden" data-modal-close>
                 <svg class="modal__icon-close">
                     <use href="./images/icons/icons.svg#icon-close"></use>
                 </svg>
-            </btn>
+            </button>
 
             <div class="registration-form">
 
@@ -478,15 +478,9 @@
                     </label>
 
 
-                    <label for="agree-with-contract" class="checkbox-label">
-                        <input class="checkbox-label__input  visually-hidden" type="checkbox" name="agree-with-contract"
-                            value="agree" id="agree-with-contract" required />
-                        <svg class="checkbox-label__icon">
-                            <use href="./images/icons/icons-modal.svg#icon-check"></use>
-                        </svg>
-                        <span>Соглашаюсь с рассылкой и принимаю &nbsp;</span>
-                        <a class="contract-link" href="#">Условия договора</a>
-                    </label>
+                    <input type="checkbox" name="user-checkbox" class="checkbox visually-hidden" id="checkbox" />
+                    <label class="checkbox-label" for="checkbox">
+                        Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a></label>
 
                     <button class="btn-submit" type="submit">Отправить</button>
                 </form>
